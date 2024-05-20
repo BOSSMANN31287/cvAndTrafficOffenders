@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/cvGen/styles/cv.css">
+</head>
+<body>
+    
+    <div class="cv-container">
+		<div class="h1s">
+			<h1 id="name"></h1>
+			<h2 id="age"></h2>
+			<h2 id="gender"></h2>
+		</div>
+		
+		<div class="section" id="qualifications">
+			<h3>Qualifications</h3>
+			<ul id="qualifications-list"></ul>
+		</div>
+		<div class="section" id="certificates">
+			<h3>Certificates</h3>
+			<ul id="certificates-list"></ul>
+		</div>
+	</div>
+	<div class="input-container">
+		<div class="containOne">
+			<input type="text" id="name-input" placeholder="Name">
+			<input type="number" id="age-input" placeholder="Age">
+			<select id="gender-input">
+				<option value="Male">Male</option>
+				<option value="Female">Female</option>
+			</select>
+		</div>
+		<div class="contTwo">
+			<input type="text" id="qualification-input" placeholder="Qualification">
+			<button onclick="addQualification()">Add Qualification</button>
+			<input type="text" id="certificate-input" placeholder="Certificate">
+			<button onclick="addCertificate()">Add Certificate</button>
+		</div>
+		
+	</div>
+
+
+    <script src="/cvGen/js/cv.js"></script>
+</body>
+</html>

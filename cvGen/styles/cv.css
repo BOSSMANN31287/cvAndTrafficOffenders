@@ -1,0 +1,81 @@
+*{
+	font-family: 'Courier New', Courier, monospace;
+}.cv-container {
+	max-width: 800px;
+	margin: 40px auto;
+	padding: 20px;
+	background-color: #f0f0f0;
+	border: 1px solid #ddd;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	display: flex;
+	gap: 30px;
+}
+input{
+	height: 30px;
+	padding: 5px;
+	border: 1px solid black;
+}
+#gender-input{
+	height: 37px;
+	border: 1px solid black;
+}
+button{
+	height: 37px;
+}
+.input-container{
+	margin-left: 5%;
+	display: flex;
+	gap: 10px;
+}
+.section {
+	margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+	color: #333;
+}
+
+#qualifications-list, #certificates-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#qualifications-list li, #certificates-list li {
+	margin-bottom: 10px;
+}
+
+
+
+@media screen and (max-width: 1175px) {
+	#name-input{
+		width: 350px;
+	}
+	.input-container{
+		display: flex;
+		flex-direction: column;
+		margin-left: 20%;
+		gap: 30px;
+	}
+}
+@media screen and (max-width: 1040px) {
+	.input-container{
+		display: flex;
+		flex-direction: column;
+		margin-left: 10%;
+		gap: 30px;
+	}
+}
+@media screen and (max-width: 795px) {
+	.input-container{
+		display: flex;
+		flex-direction: column;
+		margin-left: 5%;
+		gap: 30px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.cv-container{
+		flex-direction: column;
+	}
+}

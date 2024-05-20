@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/trafficIdeaDocumentation/styles/styles.css">
+</head>
+<body>
+    <h1 class="theheader">TRAFFIC OFFENDERS</h1>
+    <div class="main_body">
+        <div class="main_body_upper">
+            <div class="inputOne">
+                <input type="text" name="" id="name" placeholder="Enter name">
+            </div>
+            <div class="inputTwo">
+                <input type="text" name="" id="age" placeholder="Enter Age"> 
+            </div>
+            <div class="inputThree">
+                <select name="" id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="inputFour">
+                <select name="" id="offence">
+                    <option value="Overspeeding">Overspeeding</option>
+                    <option value="Drinking while driving">Drinking while driving</option>
+                    <option value="Not wearing seat belt">Not wearing seat belt</option>
+                    <option value="Not Observing traffic lights">Not Observing traffic lights</option>
+                    <option value="No driver's license">No Driver's license</option>
+                    <option value="Under-age driving">Under-age driving</option>
+                </select>
+            </div>
+            <div class="saveBtn">
+                <button onclick="saveOffender()">Save</button>
+            </div>
+        </div>
+
+        <div class="output">
+            <div class="searchDiv">
+                <input type="text" placeholder="Search by Name" id="search">
+
+                <button onclick="searchOffender()">Search</button>
+            </div>
+           
+
+            <table id="offenders-table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Offence</th>
+                    <th>Action</th>
+                    <th>Edit</th>
+                  </tr>
+                </thead>
+                <tbody id="table-body">
+                </tbody>
+              </table>
+
+        </div>
+    </div>   
+
+    <script src="/trafficIdeaDocumentation/js/index.js"></script>
+</body>
+</html>
